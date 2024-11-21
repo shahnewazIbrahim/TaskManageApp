@@ -35,3 +35,52 @@ A simple and well-designed mobile app for managing tasks, built using **React Na
    ```bash
    git clone https://github.com/your-username/task-manager-app.git
    cd task-manager-app
+
+2. Install dependencies:
+   ```bash
+    npm install
+
+3. Run the development server:
+   ```bash
+    npm start
+
+
+
+## Building APK
+
+1. Install EAS CLI:
+   ```bash
+   npm install -g eas-cli
+
+2. Configure the build:
+   ```bash
+    eas build:configure
+
+3. Build the APK:
+   ```bash
+    eas build -p android --profile preview
+
+3. Download the APK from the build dashboard link provided by Expo.
+
+
+## Folder Structure
+
+1. Install EAS CLI:
+   ```bash
+    .
+    ├── App.js                 # Main app component
+    ├── assets/                # App assets (images, icons, etc.)
+    ├── node_modules/          # Project dependencies
+    ├── package.json           # App metadata and dependencies
+    ├── eas.json               # EAS build configuration
+    ├── README.md              # Documentation (this file)
+
+
+## Folder Structure
+
+1. Install EAS CLI:
+   ```bash
+    Add task categories (e.g., Work, Personal, Shopping).
+    Implement reminders/notifications for tasks.
+    Enable cloud synchronization with Firebase or a custom backend.
+    Add a dark mode toggle for better usability.
